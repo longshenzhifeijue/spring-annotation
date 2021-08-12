@@ -173,7 +173,7 @@ import com.atguigu.aop.MathCalculator;
  * 		3）、AnnotationAwareAspectJAutoProxyCreator是一个后置处理器；
  * 		4）、容器的创建流程：
  * 			1）、registerBeanPostProcessors（）注册后置处理器；创建AnnotationAwareAspectJAutoProxyCreator对象
- * 			2）、finishBeanFactoryInitialization（）初始化剩下的单实例bean
+ * 			2）、finishBeanFactoryInitialization（）初始化剩下的单实例bean(自定义的切面,目标方法对象)
  * 				1）、创建业务逻辑组件和切面组件
  * 				2）、AnnotationAwareAspectJAutoProxyCreator拦截组件的创建过程
  * 				3）、组件创建完之后，判断组件是否需要增强
